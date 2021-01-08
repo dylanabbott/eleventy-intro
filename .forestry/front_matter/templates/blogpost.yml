@@ -1,0 +1,13 @@
+---
+label: blogpost
+hide_body: false
+fields:
+- type: text
+  name: tags
+  label: tags
+- type: text
+  name: pageTitle
+  label: pageTitle
+- type: datetime
+  name: date
+  label: date
