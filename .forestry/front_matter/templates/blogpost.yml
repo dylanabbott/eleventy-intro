@@ -14,3 +14,5 @@ fields:
   config:
     date_format: MM/DD/YYYY
   default: now
+pages:
+- src/posts/post-number-4.md
