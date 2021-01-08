@@ -1,0 +1,39 @@
+---
+layout: layout.njk
+pageTitle: Welcome to my blog!
+pagination:
+  data: collections.blogpost
+  size: 2
+  reverse: true
+  alias: pages
+---
+
+{%- for post in pages -%}
+<h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+<p>{{ post.templateContent }}</p>
+<p><em>{{ post.date | date: "%y-%m-%d" }}</em></p>
+{%- endfor -%}
+
+<div>
+	{%- if pagination.href.previous -%}
+	<a href="{{ pagination.href.previous }}">Newer Posts</a>
+	{%- endif -%} {%- if pagination.href.next -%}
+	<a href="{{ pagination.href.next }}">Older Posts</a>
+	{%- endif -%}
+</div>
+<hr />
+<div>
+	<h2>Other Posts</h2>
+	{%- for post in collections.notblog -%}
+	<h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+	<em>{{ post.date | date: "%y-%m-%d" }}</em>
+	{%- endfor -%}
+</div>
+<hr />
+<div>
+	<h2>Yet Another Type of Post</h2>
+	{%- for post in collections.stillnotblog -%}
+	<h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+	<em>{{ post.date | date: "%y-%m-%d" }}</em>
+	{%- endfor -%}
+</div>
