@@ -1,6 +1,6 @@
 body {
 	background-color: #f9f9f9;
-    color: #333333;
+    color: #555555;
     font-family: portada-text, serif;
     font-size: 22px;
 }
@@ -12,8 +12,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: #555555;
+    transition: color 0.3s, text-decoration-color 0.3s;
 }
+
+a:link {
+    color: #777777;
+    text-decoration: none;
+    text-decoration-color: #888888;
+}
+
+a:active {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+a:hover {
+    color: #aaaaaa;
+    text-decoration: underline;
+    text-decoration-color: #cccccc;
+}
+
+a:visited {
+    color: #333333;
+    text-decoration: none;
+    text-decoration-color: #444444;
+}
+
 
 main {
     width: 55vw;
@@ -25,14 +50,8 @@ header {
     margin: 0 auto;
 }
 
-.post-nav {
-    font-family: adelle-sans;
-    font-weight: 300;
-    font-size: 16px;
-}
-
-.post-date {
-    font-family: adelle-sans;
+.post-meta {
+    font-family: portada-text;
     font-weight: 300;
     font-size: 16px;
 }
