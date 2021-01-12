@@ -3,7 +3,7 @@ layout: layout.njk
 pageTitle: Welcome to my blog!
 pagination:
   data: collections.blogpost
-  size: 4
+  size: 3
   reverse: true
   alias: pages
 ---
@@ -25,15 +25,9 @@ pagination:
 <div>
 	<h3>Other Posts</h3>
 	{%- for post in collections.notblog -%}
-	<h3><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h3>
-	<p class="post-meta">{{ post.date | date: "%y-%m-%d" }}</p>
-	{%- endfor -%}
-</div>
-<hr />
-<div>
-	<h3>Yet Another Type of Post</h3>
-	{%- for post in collections.stillnotblog -%}
-	<h3><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h3>
-	<p class="post-meta">{{ post.date | date: "%y-%m-%d" }}</p>
+	<p>
+		<a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
+		<span class="post-meta">from {{ post.date | date: "%y-%m-%d" }}</span>
+	</p>
 	{%- endfor -%}
 </div>

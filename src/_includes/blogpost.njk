@@ -3,5 +3,6 @@ layout: layout.njk
 ---
 
      {{ content | safe }}
-     <p class="post-nav">Posted on: {{ page.date }}</p>
-     <p class="post-nav">Permalink: {{ page.url }}</p>
+     <p class="post-meta">Posted on: {{ page.date }}</p>
+     <p class="post-meta">Permalink: {{ page.url }}</p>
+     <p class="post-meta"> {{ page.data.note }}</p>
