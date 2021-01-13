@@ -33,16 +33,17 @@ a:link {
     text-decoration-color: rgba(136,136,136,0);
 }
 
-a:active {
-    color: #ffffff;
-    text-decoration: underline;
-    text-decoration-color: rgba(255,255,255,1);
-}
 
 a:hover {
     color: #aaaaaa;
     text-decoration: underline;
     text-decoration-color: rgba(170,170,170,1);
+}
+
+a:active {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: rgba(255,255,255,1);
 }
 
 a:visited {
