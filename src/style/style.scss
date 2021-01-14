@@ -1,0 +1,91 @@
+@use 'prism';
+@use 'normalize';
+
+body {
+	background-color: #f9f9f9;
+    color: #555555;
+    font-family: portada, serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: adelle-sans, sans-serif;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+}
+
+main, header {
+    width: 55vw;
+    margin: 0 auto;
+}
+
+a {
+    transition: color 0.5s, text-decoration-color 0.5s;
+}
+
+a:link {
+    color: #888888;
+    text-decoration: none;
+    text-decoration-color: rgba(136,136,136,0);
+}
+
+
+a:hover {
+    color: #aaaaaa;
+    text-decoration: underline;
+    text-decoration-color: rgba(170,170,170,1);
+}
+
+a:active {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: rgba(255,255,255,1);
+}
+
+a:visited {
+    color: #333333;
+    text-decoration: none;
+    text-decoration-color: rgba(51,51,51,0);
+}
+
+
+.post-meta {
+    font-family: adelle-sans, sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.ql-meta {
+    font-family: adelle-sans, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.quicklink {
+    font-family: adelle-sans, sans-serif;
+    font-size: 19px;
+}
+
+pre {
+    padding: 1em;
+    background-color: #333333;
+    border-radius: 0.5em;
+    white-space: pre-wrap;
+} 
+
+article {
+    padding: 0 0 1em 0;
+    img {
+        width: 100%;
+    }
+}
+
+blockquote {
+    font-family: portada;
+    font-style: italic;
+    font-weight: 300;
+    color: #888888;
+}

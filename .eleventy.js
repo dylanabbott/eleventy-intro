@@ -1,6 +1,6 @@
 module.exports = (config) => {
-	config.addWatchTarget('/.src/style');
-	config.addPassthroughCopy('./src/style/');
+	config.addWatchTarget('/.src/style/style.css');
+	config.addPassthroughCopy('./src/style/style.css');
 	config.addPassthroughCopy('./src/admin');
 	config.addPassthroughCopy('./src/js');
 	return {

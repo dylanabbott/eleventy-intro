@@ -9,10 +9,12 @@ pagination:
 ---
 
 {%- for post in pages -%}
-<h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
-<p>{{ post.templateContent }}</p>
-<p class="post-meta"><a href="{{ post.url }}"># {{ post.date | date: "%b %d, %Y" }}</a></p>
-{%- endfor -%}
+<article>
+	<h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+	<p>{{ post.templateContent }}</p>
+	<p class="post-meta"><a href="{{ post.url }}"># {{ post.date | date: "%b %d, %Y" }}</a></p>
+	{%- endfor -%}
+</article>
 
 <div class="post-meta">
 	{%- if pagination.href.previous -%}
@@ -21,7 +23,9 @@ pagination:
 	<a href="{{ pagination.href.next }}">Older Posts</a>
 	{%- endif -%}
 </div>
+
 <hr />
+
 <div>
 	<h3>Quick Links and Asides</h3>
 	{%- for post in collections.quicklink -%}
