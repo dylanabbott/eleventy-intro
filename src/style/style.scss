@@ -1,5 +1,6 @@
 @use 'prism';
 @use 'normalize';
+@mixin shade { box-shadow: 0 0 5px #999999; }
 
 body {
 	background-color: #f9f9f9;
@@ -17,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main, header {
-    width: 55vw;
+    width: clamp(52vw, 62ch, 90vw);
     margin: 0 auto;
 }
 
@@ -74,18 +75,29 @@ pre {
     background-color: #333333;
     border-radius: 0.5em;
     white-space: pre-wrap;
+    @include shade;
 } 
 
 article {
     padding: 0 0 1em 0;
     img {
-        width: 100%;
+        display: block;
+        margin: 0 auto;
+        max-width: 52vw;
+        border-radius: 0.5em;
+        @include shade;
     }
 }
 
 blockquote {
-    font-family: portada;
     font-style: italic;
-    font-weight: 300;
     color: #888888;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5em;
+    max-width: 700px;
+    @include shade;
 }

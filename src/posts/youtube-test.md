@@ -4,7 +4,7 @@ tags: blogpost
 ---
 Testing out an embedded media object.
 
-<iframe width="100%" height="460" src="https://www.youtube.com/embed/5apiDyoMG_Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="394" src="https://www.youtube.com/embed/5apiDyoMG_Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 How about a Bandcamp embed?
 
