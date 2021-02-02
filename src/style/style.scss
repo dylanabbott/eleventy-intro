@@ -2,6 +2,10 @@
 @use 'normalize';
 @mixin shade { box-shadow: 0 0 5px #999999; }
 
+$desktop: "(min-width: 960px)";
+$tablet: "(min-width: 768px) and (max-width: 959px)";
+$phone: "(max-width: 767px)";
+
 body {
 	background-color: #f9f9f9;
     color: #555555;
@@ -9,6 +13,14 @@ body {
     font-weight: 300;
     font-size: 22px;
     line-height: 1.5;
+
+    @media #{$tablet} {
+        font-size: 18px;
+    }
+
+    @media #{$phone} {
+        font-size: 14px;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,18 +63,42 @@ a {
     font-family: adelle-sans, sans-serif;
     font-weight: 400;
     font-size: 19px;
+
+    @media #{$tablet} {
+        font-size: 16px;
+    }
+
+    @media #{$phone} {
+        font-size: 12px;
+    }
 }
 
 .ql-meta {
     font-family: adelle-sans, sans-serif;
     font-weight: 400;
     font-size: 16px;
+
+    @media #{$tablet} {
+        font-size: 14px;
+    }
+
+    @media #{$phone} {
+        font-size: 11px;
+    }
 }
 
 
 .quicklink {
     font-family: adelle-sans, sans-serif;
     font-size: 19px;
+
+    @media #{$tablet} {
+        font-size: 16px;
+    }
+
+    @media #{$phone} {
+        font-size: 12px;
+    }
 }
 
 .page-nav {
@@ -98,12 +134,24 @@ blockquote {
     color: #888888;
 }
 
+
+
 iframe {
     display: block;
     margin: 0 auto;
     border-radius: 0.5em;
-    max-width: 700px;
+    width: clamp(52vw, 58ch, 90vw);
     @include shade;
+ 
+    @media #{$desktop} {
+        height: 360px;
+    }
+    @media #{$tablet} {
+        height: 300px;
+    }
+    @media #{$phone} {
+        height: 200px;
+    }
 }
 
 hr {

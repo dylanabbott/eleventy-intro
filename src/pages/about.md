@@ -2,6 +2,7 @@
 pageTitle: About
 layout: layout.njk
 tags: about
+emoji: 🔎
 ---
 
 ## About Info

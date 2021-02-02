@@ -467,6 +467,16 @@ body {
   font-size: 22px;
   line-height: 1.5;
 }
+@media (min-width: 768px) and (max-width: 959px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: adelle-sans, sans-serif;
@@ -505,16 +515,46 @@ a:visited {
   font-weight: 400;
   font-size: 19px;
 }
+@media (min-width: 768px) and (max-width: 959px) {
+  .post-meta {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .post-meta {
+    font-size: 12px;
+  }
+}
 
 .ql-meta {
   font-family: adelle-sans, sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
+@media (min-width: 768px) and (max-width: 959px) {
+  .ql-meta {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .ql-meta {
+    font-size: 11px;
+  }
+}
 
 .quicklink {
   font-family: adelle-sans, sans-serif;
   font-size: 19px;
+}
+@media (min-width: 768px) and (max-width: 959px) {
+  .quicklink {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .quicklink {
+    font-size: 12px;
+  }
 }
 
 .page-nav {
@@ -554,8 +594,23 @@ iframe {
   display: block;
   margin: 0 auto;
   border-radius: 0.5em;
-  max-width: 700px;
+  width: clamp(52vw, 58ch, 90vw);
   box-shadow: 0 0 5px #999999;
+}
+@media (min-width: 960px) {
+  iframe {
+    height: 360px;
+  }
+}
+@media (min-width: 768px) and (max-width: 959px) {
+  iframe {
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  iframe {
+    height: 200px;
+  }
 }
 
 hr {

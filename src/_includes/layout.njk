@@ -3,6 +3,12 @@ layout: wrapper.njk
 ---
         {%-include "header.njk" %}
         <main>
+        <ul class="page-nav">
+                {% for post in collections.about %}
+                <li>{{ post.data.emoji }} <a href="{{ post.url }}">{{ post.data.pageTitle }}</a></li>
+                {% endfor %}
+        </ul>
+        <hr>
         {{ content | safe }}
         </main>
         {% include "footer.njk" %}

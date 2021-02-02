@@ -2,6 +2,7 @@
 pageTitle: Something Else
 layout: layout.njk
 tags: about
+emoji: 💡
 ---
 
 ## Something Else

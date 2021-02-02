@@ -7,16 +7,12 @@ pagination:
   reverse: true
   alias: pages
 ---
-<ul class="page-nav">
-{% for post in collections.about %}
-<li><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></li> |
-{% endfor %}
-</ul>
+
 {% for post in pages %}
 <article>
 	<h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
 	<p>{{ post.templateContent }}</p>
-	<p class="post-meta"><a href="{{ post.url }}"># {{ post.date | date: "%b %d, %Y" }}</a></p>
+	<p class="post-meta">{{ post.data.emoji }}<a href="{{ post.url }}">{{ post.date | date: "%b %d, %Y" }}</a></p>
 	</article>
 	{% endfor %}
 
@@ -38,7 +34,7 @@ pagination:
 	{% for post in collections.quicklink %}
 	<article class="quicklink">
 		{{ post.templateContent }}
-		<a href="{{ post.url }}">#</a> <span class="ql-meta">from {{ post.date | date: "%b %d, %Y" }}</span>
+		{{ post.data.emoji }}<a href="{{ post.url }}"><span class="ql-meta"> {{ post.date | date: "%b %d, %Y" }}</a></span>
 	</article>
 	{% endfor %}
 </div>
