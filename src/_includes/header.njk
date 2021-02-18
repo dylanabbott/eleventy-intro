@@ -1,4 +1,11 @@
 <header>
-    <a href="/"><h1>Eleventy Blog Test</h1></a>
-    <h3>Just trying some things out. By Dylan Abbott.</h3>
+    <a href="/"><h1>Hi, I'm Dylan Abbott</h1></a>
+    <h2>I do a little bit of a lot of things.</h2>
+    <h3>I write about some of them here.</h3>
+    <ul class="page-nav">
+        {% for post in collections.about %}
+        <li>{{ post.data.emoji }} <a href="{{ post.url }}">{{ post.data.pageTitle }}</a></li>
+        {% endfor %}
+    </ul>
+    <hr>
 </header>
