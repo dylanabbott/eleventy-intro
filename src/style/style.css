@@ -562,9 +562,13 @@ main {
   font-family: adelle-sans, sans-serif;
   font-size: 0.8rem;
 }
+.quicklink img {
+  width: clamp(10vw, 24ch, 90vw);
+  margin: 1rem 0;
+}
 
 .article-container {
-  width: clamp(52vw, 48ch, 90vw);
+  width: clamp(38vw, 48ch, 90vw);
   margin-right: 2rem;
   flex-grow: 2;
 }
@@ -587,6 +591,7 @@ article img {
   display: inline;
   list-style-type: none;
   font-family: adelle-sans, sans-serif;
+  margin-right: 1rem;
 }
 
 pre {
@@ -607,7 +612,7 @@ iframe {
   display: block;
   margin: 0 auto 2rem auto;
   border-radius: 0.5em;
-  width: clamp(52vw, 48ch, 90vw);
+  width: clamp(300px, 48ch, 90%);
   box-shadow: 0 4px 3.1px -4px rgba(0, 0, 0, 0.013), 0 8.2px 6.4px -4px rgba(0, 0, 0, 0.033), 0 12.8px 9.2px -4px rgba(0, 0, 0, 0.057), 0 18.6px 12.4px -4px rgba(0, 0, 0, 0.082), 0 26.9px 21.4px -4px rgba(0, 0, 0, 0.107), 0 36.8px 32.5px -4px rgba(0, 0, 0, 0.13);
 }
 @media (min-width: 960px) {
@@ -627,7 +632,7 @@ iframe {
 }
 
 hr {
-  border-top: 1px solid #999999;
+  border-top: 1px solid #dddddd;
   border-bottom: 0;
 }
 

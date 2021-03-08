@@ -1,6 +1,6 @@
 ---
 date: 2021-01-08T21:44:28Z
-tags: blogpost
+tags: ['Blog Post']
 pageTitle: Post Number 4 coming up!
 
 ---

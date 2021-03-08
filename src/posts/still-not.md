@@ -1,5 +1,5 @@
 ---
-tags: ['stillnotblog', 'blogpost']
+tags: ['Still Not Blog', 'Blog Post']
 pageTitle: Whoa what?
 ---
 

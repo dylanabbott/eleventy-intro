@@ -111,10 +111,14 @@ main {
 .quicklink {
     font-family: adelle-sans, sans-serif;
     font-size: 0.8rem; 
+    img {
+        width: clamp(10vw, 24ch, 90vw);
+        margin: 1rem 0;
+    }
 }
 
 .article-container {
-    width: clamp(52vw, 48ch, 90vw);
+    width: clamp(38vw, 48ch, 90vw);
     margin-right: 2rem;
     flex-grow: 2;
 }
@@ -136,6 +140,7 @@ article {
     display: inline;
     list-style-type: none;
     font-family: adelle-sans, sans-serif;
+    margin-right: 1rem;
     }
 }
 
@@ -161,7 +166,7 @@ iframe {
     display: block;
     margin: 0 auto 2rem auto;
     border-radius: 0.5em;
-    width: clamp(52vw, 48ch, 90vw);
+    width: clamp(300px, 48ch, 90%);
     @include shade;
  
     @media #{$desktop} {
@@ -176,6 +181,6 @@ iframe {
 }
 
 hr {
-    border-top: 1px solid #999999;
+    border-top: 1px solid #dddddd;
     border-bottom: 0;
 }

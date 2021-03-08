@@ -1,8 +1,9 @@
 ---
 pageTitle: YouTube Test Post
-tags: blogpost
+tags: ['Blog Post']
 ---
 Testing out an embedded media object.
+
 <iframe src="https://www.youtube.com/embed/5apiDyoMG_Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 How about a Bandcamp embed?

@@ -1,7 +1,7 @@
 ---
 pageTitle: Something Else
 layout: layout.njk
-tags: about
+tags: ['About', 'Something Else']
 emoji: 💡
 ---
 

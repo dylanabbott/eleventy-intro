@@ -3,7 +3,7 @@ layout: layout.njk
 pageTitle: Welcome to my blog!
 pagination:
   data: collections.blogpost
-  size: 3
+  size: 5
   reverse: true
   alias: pages
 ---
@@ -33,7 +33,6 @@ pagination:
 </section>
 
 <section class="ql-container">
-<div>
 	<h4>Quick Links and Asides</h4>
 	{% for post in collections.quicklink %}
 	<article class="quicklink">
@@ -41,5 +40,4 @@ pagination:
 		{{ post.data.emoji }}<a href="{{ post.url }}"><span class="ql-meta"> {{ post.date | date: "%b %d, %Y" }}</a></span>
 	</article>
 	{% endfor %}
-</div>
 </section>
