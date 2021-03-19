@@ -1,5 +1,5 @@
 ---
-tags: ['Not Blog']
+tags: ['notblog']
 pageTitle: Another Post 1
 date: Created
 note: ludicrous

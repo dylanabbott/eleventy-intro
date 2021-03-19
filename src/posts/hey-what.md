@@ -1,6 +1,6 @@
 ---
 date: 2021-01-08T22:13:58Z
-tags: ['Not Blog']
+tags: ['notblog']
 pageTitle: Hey What
 ---
 And here's a "notblog" post deployed from Forestry.

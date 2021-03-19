@@ -1,6 +1,6 @@
 ---
 layout: quicklink.njk
-tags: ['Quick Link']
+tags: ['quicklink']
 pageTitle: Tweet
 ---
 I found an interesting tweet:

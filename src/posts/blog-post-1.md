@@ -1,5 +1,5 @@
 ---
-tags: ['Blog Post']
+tags: ['blogpost']
 pageTitle: This is my Title 1
 date: 2020-12-01T08:00:00-08:00
 featuredImage: /img/handlebars.jpg

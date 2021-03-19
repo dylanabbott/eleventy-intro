@@ -1,6 +1,6 @@
 ---
 pageTitle: YouTube Test Post
-tags: ['Blog Post']
+tags: ['blogpost']
 ---
 Testing out an embedded media object.
 

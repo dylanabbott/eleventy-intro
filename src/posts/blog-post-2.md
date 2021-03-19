@@ -1,5 +1,5 @@
 ---
-tags: ['Blog Post']
+tags: ['blogpost']
 pageTitle: This is my other Title 2
 date: 2020-12-10
 ---

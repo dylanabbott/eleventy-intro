@@ -1,7 +1,7 @@
 ---
 pageTitle: About
 layout: layout.njk
-tags: ['About']
+tags: ['about']
 emoji: 🔎
 ---
 

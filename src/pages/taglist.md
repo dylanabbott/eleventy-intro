@@ -1,7 +1,7 @@
 ---
 pageTitle: Tag List
 layout: layout.njk
-tags: ['About']
+tags: ['about']
 emoji: ⚓️
 ---
 

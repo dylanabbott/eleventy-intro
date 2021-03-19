@@ -1,6 +1,6 @@
 ---
 layout: quicklink.njk
-tags: ['Quick Link']
+tags: ['quicklink']
 pageTitle: Image
 ---
 
