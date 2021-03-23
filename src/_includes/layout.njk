@@ -1,14 +1,14 @@
 ---
 layout: wrapper.njk
 ---
+
         {% if pagination.href.previous %}
                 {% include "header-single.njk" %}
         {% else %}
                 {% include "header.njk" %}
         {% endif %}
-        {{ pages.pageNumber }}
         <main>
-        
         {{ content | safe }}
+        {{ pages.href.previous }}
         </main>
         {% include "footer.njk" %}
