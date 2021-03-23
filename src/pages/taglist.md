@@ -9,6 +9,6 @@ emoji: ⚓️
 
 <ul>
 {% for tag in collections.tagList %}
-<li><a href="{{tag.url}}">{{tag}}</a></li>
+<li><a href="{{ tag.data.url }}">{{tag}}</a></li>
 {% endfor %}
 </ul>

@@ -4,7 +4,7 @@ module.exports = (config) => {
 	config.addPassthroughCopy('./src/admin');
 	config.addPassthroughCopy('./src/js');
 	config.addPassthroughCopy('./src/img');
-	config.addCollection('tagList', require('./src/utils/getTagList.js'));
+	config.addCollection('tagList', require('./src/js/getTagList.js'));
 	return {
 		dir: {
 			input: 'src',
