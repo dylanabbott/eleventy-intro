@@ -1,0 +1,17 @@
+{
+	"title": "dylanabbott.com",
+	"url": "https://localhost:8080/",
+	"language": "en",
+	"description": "I'm Dylan Abbott, I do a little bit of a lot of things.",
+	"feed": {
+		"subtitle": "I'm Dylan Abbott, I do a little bit of a lot of things.",
+		"filename": "feed.xml",
+		"path": "/feed/feed.xml",
+		"id": "https://localhost:8080/"
+	},
+	"author": {
+		"name": "Dylan Abbott",
+		"email": "dylanabbott@gmail.com",
+		"url": "https://localhost:8080"
+	}
+}

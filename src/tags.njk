@@ -8,9 +8,9 @@ pagination:
     - nav
     - tagList
   addAllPagesToCollections: true
-layout: layout.njk
+layout: layout-single.njk
 eleventyComputed:
-  title: Tagged “{{ tag }}”
+  pageTitle: Posts tagged “{{ tag }}”
 permalink: /tags/{{ tag | slug }}/
 ---
 <h1>Posts About “{{ tag }}”</h1>
