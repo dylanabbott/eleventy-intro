@@ -5,9 +5,15 @@ tags: about
 pageTitle: Topics
 emoji: ⚓︎
 ---
+
+<section class="article-container">
 <h1>Topics on this site:</h1>
 
 {% for tag in collections.tagList %}
+<article>
   {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
   <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+</article>
 {% endfor %}
+<hr>
+</section>

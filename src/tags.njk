@@ -4,18 +4,26 @@ pagination:
   size: 1
   alias: tag
   filter:
+    - tagList 
     - all
     - nav
-    - tagList
+    - post
+    - posts
+    - about
+    - error
   addAllPagesToCollections: true
 layout: layout-single.njk
 eleventyComputed:
   pageTitle: Posts tagged “{{ tag }}”
 permalink: /tags/{{ tag | slug }}/
 ---
-<h1>Posts About “{{ tag }}”</h1>
+
+<section class="article-container">
+<h1>Posts tagged “{{ tag }}”</h1>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
 
 <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+<hr>
+</section>
