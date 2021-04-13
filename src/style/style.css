@@ -564,6 +564,7 @@ main {
 }
 .quicklink img {
   width: clamp(10vw, 24ch, 90vw);
+  height: auto;
   margin: 1rem 0;
 }
 
@@ -580,8 +581,9 @@ article img {
   display: block;
   margin: 2rem auto;
   width: clamp(38vw, 48ch, 90vw);
+  height: auto;
   border-radius: 0.5em;
-  box-shadow: 0 4px 3.1px -4px rgba(0, 0, 0, 0.013), 0 8.2px 6.4px -4px rgba(0, 0, 0, 0.033), 0 12.8px 9.2px -4px rgba(0, 0, 0, 0.057), 0 18.6px 12.4px -4px rgba(0, 0, 0, 0.082), 0 26.9px 21.4px -4px rgba(0, 0, 0, 0.107), 0 36.8px 32.5px -4px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 4px 3.1px -4px rgba(0, 0, 0, 0.013), 0 6px 6.4px -4px rgba(0, 0, 0, 0.033), 0 9px 9.2px -4px rgba(0, 0, 0, 0.057), 0 13px 12.4px -4px rgba(0, 0, 0, 0.082), 0 17px 21.4px -4px rgba(0, 0, 0, 0.107), 0 21px 32.5px -4px rgba(0, 0, 0, 0.13);
 }
 
 .page-nav {
@@ -600,7 +602,7 @@ pre {
   background-color: #333333;
   border-radius: 0.5em;
   white-space: pre-wrap;
-  box-shadow: 0 4px 3.1px -4px rgba(0, 0, 0, 0.013), 0 8.2px 6.4px -4px rgba(0, 0, 0, 0.033), 0 12.8px 9.2px -4px rgba(0, 0, 0, 0.057), 0 18.6px 12.4px -4px rgba(0, 0, 0, 0.082), 0 26.9px 21.4px -4px rgba(0, 0, 0, 0.107), 0 36.8px 32.5px -4px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 4px 3.1px -4px rgba(0, 0, 0, 0.013), 0 6px 6.4px -4px rgba(0, 0, 0, 0.033), 0 9px 9.2px -4px rgba(0, 0, 0, 0.057), 0 13px 12.4px -4px rgba(0, 0, 0, 0.082), 0 17px 21.4px -4px rgba(0, 0, 0, 0.107), 0 21px 32.5px -4px rgba(0, 0, 0, 0.13);
 }
 
 blockquote {
@@ -613,7 +615,7 @@ iframe {
   margin: 0 auto 2rem auto;
   border-radius: 0.5em;
   width: clamp(300px, 48ch, 90%);
-  box-shadow: 0 4px 3.1px -4px rgba(0, 0, 0, 0.013), 0 8.2px 6.4px -4px rgba(0, 0, 0, 0.033), 0 12.8px 9.2px -4px rgba(0, 0, 0, 0.057), 0 18.6px 12.4px -4px rgba(0, 0, 0, 0.082), 0 26.9px 21.4px -4px rgba(0, 0, 0, 0.107), 0 36.8px 32.5px -4px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 4px 3.1px -4px rgba(0, 0, 0, 0.013), 0 6px 6.4px -4px rgba(0, 0, 0, 0.033), 0 9px 9.2px -4px rgba(0, 0, 0, 0.057), 0 13px 12.4px -4px rgba(0, 0, 0, 0.082), 0 17px 21.4px -4px rgba(0, 0, 0, 0.107), 0 21px 32.5px -4px rgba(0, 0, 0, 0.13);
 }
 @media (min-width: 960px) {
   iframe {

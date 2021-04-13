@@ -2,7 +2,7 @@
 tags: ['blogpost']
 pageTitle: This is my Title 1
 date: 2020-12-01T08:00:00-08:00
-featuredImage: /img/handlebars.jpg
+featuredImage: ./src/img/handlebars.jpg
 ---
 
 ## My first Eleventy Post
@@ -37,7 +37,9 @@ blurObject.style.filter = `blur( ${blurAmount}px)`;
 }</code>
 </pre>
 
-![handlebars]( {{ featuredImage }} "handlebars")
+{% image featuredImage "Handlebars" "300px, 600px" %}
+
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend et nulla in ornare. Ut id nisi ac ipsum consequat ullamcorper lacinia eget mauris. Praesent lacinia urna quis porttitor varius. Aenean congue orci vehicula accumsan placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam aliquam viverra dolor, a tristique turpis consectetur iaculis.
 

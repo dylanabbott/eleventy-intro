@@ -6,4 +6,4 @@ pageTitle: Another Image
 
 Here's another image I stumbled across:
 
-![Bobcats]( /img/IMG_1687.JPG "Bobcats")
+{% image "src/img/IMG_1687.JPG", "Bobcats", "300px, 600px" %}

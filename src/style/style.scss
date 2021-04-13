@@ -2,11 +2,11 @@
 @use 'normalize';
 @mixin shade { box-shadow:
   0 4px 3.1px -4px rgba(0, 0, 0, 0.013),
-  0 8.2px 6.4px -4px rgba(0, 0, 0, 0.033),
-  0 12.8px 9.2px -4px rgba(0, 0, 0, 0.057),
-  0 18.6px 12.4px -4px rgba(0, 0, 0, 0.082),
-  0 26.9px 21.4px -4px rgba(0, 0, 0, 0.107),
-  0 36.8px 32.5px -4px rgba(0, 0, 0, 0.13)
+  0 6px 6.4px -4px rgba(0, 0, 0, 0.033),
+  0 9px 9.2px -4px rgba(0, 0, 0, 0.057),
+  0 13px 12.4px -4px rgba(0, 0, 0, 0.082),
+  0 17px 21.4px -4px rgba(0, 0, 0, 0.107),
+  0 21px 32.5px -4px rgba(0, 0, 0, 0.13)
 ;
  }
 
@@ -113,6 +113,7 @@ main {
     font-size: 0.8rem; 
     img {
         width: clamp(10vw, 24ch, 90vw);
+        height: auto;
         margin: 1rem 0;
     }
 }
@@ -129,6 +130,7 @@ article {
         display: block;
         margin: 2rem auto;
         width: clamp(38vw, 48ch, 90vw);
+        height: auto;
         border-radius: 0.5em;
         @include shade;
     }

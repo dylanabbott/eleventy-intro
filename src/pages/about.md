@@ -1,7 +1,7 @@
 ---
 pageTitle: About
 layout: layout-single.njk
-tags: ['about', 'pages', 'junk']
+tags: ['about', 'junk']
 emoji: 🔎
 ---
 
