@@ -1,7 +1,7 @@
 ---
 tags: ['blogpost']
 pageTitle: Testing Image Plugin
-featuredImage: ./src/img/IMG_1285D.jpg
+featuredImage: ./src/img/IMG_3628.jpg
 ---
 
 # Hi.
