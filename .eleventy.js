@@ -1,5 +1,7 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const Image = require('@11ty/eleventy-img');
+const embedTwitter = require('eleventy-plugin-embed-twitter');
+const embedInstagram = require('eleventy-plugin-embed-instagram');
 
 async function imageShortcode(src, alt, sizes) {
 	let metadata = await Image(src, {
@@ -26,6 +28,8 @@ module.exports = (config) => {
 	config.addPassthroughCopy('./src/js');
 	//config.addPassthroughCopy('./src/img');
 	config.addPlugin(pluginRss);
+	config.addPlugin(embedTwitter);
+	config.addPlugin(embedInstagram);
 	config.addNunjucksAsyncShortcode('image', imageShortcode);
 	config.addLiquidShortcode('image', imageShortcode);
 	config.addJavaScriptFunction('image', imageShortcode);

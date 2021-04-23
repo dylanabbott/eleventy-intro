@@ -32,12 +32,14 @@ body {
     font-family: portada, serif;
     font-weight: 300;
     line-height: 1.5;
+    position: relative;
+    padding-bottom: 8.5rem;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: adelle-sans, sans-serif;
     font-weight: 700;
-    margin: 2rem 0 1.38rem;
+    margin: 1rem 0;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -98,7 +100,7 @@ main {
 
 .ql-container {
     width: clamp(10vw, 24ch, 90vw);
-    flex-grow: 1;
+    // flex-grow: 1;
 }
 
 .ql-meta {
@@ -121,7 +123,7 @@ main {
 .article-container {
     width: clamp(38vw, 48ch, 90vw);
     margin-right: 2rem;
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
 article {
@@ -162,6 +164,9 @@ blockquote {
     color: #888888;
 }
 
+.twitter-tweet {
+    margin: 0 auto;
+}
 
 
 iframe {
@@ -172,17 +177,69 @@ iframe {
     @include shade;
  
     @media #{$desktop} {
-        height: 360px;
+        // height: 360px;
     }
     @media #{$tablet} {
-        height: 300px;
+        // height: 300px;
     }
     @media #{$phone} {
-        height: 200px;
+        // height: 200px;
     }
+}
+
+iframe.instagram-media {
+    margin: 0 auto 0 auto !important;
+    overflow-y: visible;
 }
 
 hr {
     border-top: 1px solid #dddddd;
     border-bottom: 0;
+}
+
+footer {
+    padding: 1rem 0 4rem 0;
+    background-color: #333333;
+    color: #f9f9f9;
+
+    ul {
+        padding-inline-start: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        li {
+            display: inline;
+            list-style-type: none;
+            &:not(:first-of-type)::before {
+                content:" | ";
+            }
+        }
+    }
+    a {
+    &:link {
+        color: #888888;
+        text-decoration-color: rgba(204,204,204,0);
+        }
+    &:hover {
+        color: #aaaaaa;
+        text-decoration-color: rgba(204,204,204,1);
+        }
+
+    &:active {
+        color: #ffffff;
+        text-decoration-color: rgba(255,255,255,1);
+        }
+
+    &:visited {
+        color: #cccccc ;
+        text-decoration-color: rgba(204,204,204,0);
+        }
+    }
+}
+
+.footer-margin {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #333333;
 }

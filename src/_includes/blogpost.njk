@@ -2,10 +2,12 @@
 layout: layout-single.njk
 emoji: 🌿 
 ---
-<article>
-     <a href="{{ page.url }}"><h2>{{ pageTitle }}</h2></a>
-     {{ content | safe }}
-     <p class="post-meta">Posted on: {{ page.date.toLocaleDateString('en-US', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'}) }}</p>
-     <p class="post-meta"><a href="{{ page.url }}">#</a></p>
-     <p class="post-meta"> {{ page.data.note }}</p>
-</article>
+<section class="article-container">
+     <article>
+          <a href="{{ page.url }}"><h2>{{ pageTitle }}</h2></a>
+          {{ content | safe }}
+          <p class="post-meta">Posted on: {{ page.date.toLocaleDateString('en-US', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'}) }}</p>
+          <p class="post-meta"><a href="{{ page.url }}">#</a></p>
+          <p class="post-meta"> {{ page.data.note }}</p>
+     </article>
+</section>
