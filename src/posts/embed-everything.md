@@ -1,6 +1,6 @@
 ---
-date: 2021-06-28T21:08:52Z
-tags: blogpost testing
+date: 2021-06-28T21:08:52.000+00:00
+tags: blogpost
 pageTitle: Embed Everything
 
 ---
