@@ -2,6 +2,7 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const Image = require('@11ty/eleventy-img');
 const embedTwitter = require('eleventy-plugin-embed-twitter');
 const embedInstagram = require('eleventy-plugin-embed-instagram');
+const embedEverything = require('eleventy-plugin-embed-everything');
 
 async function imageShortcode(src, alt, sizes) {
 	let metadata = await Image(src, {
@@ -24,12 +25,16 @@ module.exports = (config) => {
 	//markdownTemplateEngine: 'njk';
 	config.addWatchTarget('./src/style/style.css');
 	config.addPassthroughCopy('./src/style/style.css');
+	config.addPassthroughCopy('./src/style/style.css.map');
 	config.addPassthroughCopy('./src/admin');
 	config.addPassthroughCopy('./src/js');
 	//config.addPassthroughCopy('./src/img');
 	config.addPlugin(pluginRss);
 	config.addPlugin(embedTwitter);
 	config.addPlugin(embedInstagram);
+	config.addPlugin(embedEverything, {
+		use: ['instagram', 'spotify', 'twitter', 'youtube']
+	});
 	config.addNunjucksAsyncShortcode('image', imageShortcode);
 	config.addLiquidShortcode('image', imageShortcode);
 	config.addJavaScriptFunction('image', imageShortcode);

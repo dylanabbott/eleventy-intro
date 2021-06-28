@@ -20,6 +20,8 @@ pagination:
 
 
 <div class="post-meta">
+	{% if pagination.href.previous or pagination.href.next%}
+	<hr> {% endif %}
 	{% if pagination.href.previous %}
 	<a href="{{ pagination.href.previous }}">Newer Posts</a>
 	{% endif %} 
