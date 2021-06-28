@@ -15,5 +15,6 @@ fields:
     date_format: MM/DD/YYYY
   default: now
 pages:
+- src/posts/embed-everything.md
 - src/posts/hey-what.md
 - src/posts/post-number-4.md
