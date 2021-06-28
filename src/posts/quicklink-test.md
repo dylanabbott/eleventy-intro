@@ -2,6 +2,7 @@
 layout: quicklink.njk
 tags: ['quicklink']
 pageTitle: Tweet
+date: 2021-04-01
 ---
 I found an interesting tweet:
 {% image "https://pbs.twimg.com/media/ErpJJ10VcAAi1io?format=jpg&name=medium", "TWO TIMES BABY", "300px, 600px" %}

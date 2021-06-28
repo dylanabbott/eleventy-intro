@@ -2,6 +2,7 @@
 layout: quicklink.njk
 tags: ['quicklink']
 pageTitle: Another Image
+date: 2021-04-04
 ---
 
 Here's another image I stumbled across:

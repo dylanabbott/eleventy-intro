@@ -1,6 +1,7 @@
 ---
 pageTitle: YouTube Test Post
 tags: ['blogpost']
+date: 2021-01-13
 ---
 Testing out an embedded media object.
 

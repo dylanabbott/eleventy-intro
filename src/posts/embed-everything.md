@@ -1,5 +1,5 @@
 ---
-date: 2021-06-28T21:08:52.000+00:00
+date: 2021-06-28T21:08:52.000-08:00
 tags: blogpost
 pageTitle: Embed Everything
 

@@ -3,6 +3,7 @@ layout: quicklink.njk
 tags: ['quicklink']
 pageTitle: Image
 linkedImage: https://i2.wp.com/www.dylanabbott.com/wp-content/uploads/2021/04/IMG_3805.jpg
+date: 2021-04-03
 ---
 
 Here's an image I stumbled across:

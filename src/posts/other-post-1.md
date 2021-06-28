@@ -1,7 +1,7 @@
 ---
 tags: ['notblog']
 pageTitle: Another Post 1
-date: Created
+date: 2020-12-23
 note: ludicrous
 ---
 

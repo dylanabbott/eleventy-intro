@@ -3,6 +3,7 @@ const Image = require('@11ty/eleventy-img');
 const embedTwitter = require('eleventy-plugin-embed-twitter');
 const embedInstagram = require('eleventy-plugin-embed-instagram');
 const embedEverything = require('eleventy-plugin-embed-everything');
+const moment = require('moment');
 
 async function imageShortcode(src, alt, sizes) {
 	let metadata = await Image(src, {
@@ -35,6 +36,10 @@ module.exports = (config) => {
 	config.addPlugin(embedEverything, {
 		use: ['instagram', 'spotify', 'twitter', 'youtube']
 	});
+	config.addNunjucksFilter("toUTCString", (date) => {
+		const utc = date.toUTCString();
+		return moment.utc(utc).format("MMMM Do YYYY");
+		});
 	config.addNunjucksAsyncShortcode('image', imageShortcode);
 	config.addLiquidShortcode('image', imageShortcode);
 	config.addJavaScriptFunction('image', imageShortcode);
