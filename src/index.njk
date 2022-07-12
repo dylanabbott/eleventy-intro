@@ -35,7 +35,7 @@ pagination:
 
 <section class="ql-container">
 	<h4>Quick Links and Asides</h4>
-	{% for post in collections.quicklink %}
+	{% for post in collections.quicklink | reverse %}
 	<article class="quicklink">
 		{{ post.templateContent | safe }}
 		{{ post.data.emoji }}<a href="{{ post.url }}"><span class="ql-meta"> {{ post.date | toUTCString }}</a></span>
